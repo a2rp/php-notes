@@ -90,7 +90,7 @@ try {
     }
 
     $contentType = $_SERVER["CONTENT_TYPE"] ?? "";
-    if (stripos($contentType, "application/json") !== 0) {
+    if (preg_match('~^application/json(?:\s*;|$)~i', trim($contentType)) !== 1) {
         sendJson(415, ["error" => "Send application/json"]);
         exit;
     }

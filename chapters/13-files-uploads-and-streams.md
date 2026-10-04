@@ -61,7 +61,7 @@ The browser-provided filename and extension are untrusted. Do not use them as th
 
 ## Store with a generated name outside the public directory
 
-Save accepted files under an application-controlled name in a protected storage folder:
+Assume the upload handler is under **public/**. Save accepted files under an application-controlled name in a protected storage folder beside that public folder:
 
 ~~~php
 $storageDirectory = dirname(__DIR__) . "/private-uploads";

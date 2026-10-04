@@ -30,7 +30,7 @@ A session stores server-side state associated with a session identifier sent by 
 <?php
 
 session_set_cookie_params([
-    "secure" => true,
+    "secure" => getenv("APP_HTTPS") === "1",
     "httponly" => true,
     "samesite" => "Lax",
 ]);
@@ -38,7 +38,7 @@ session_set_cookie_params([
 session_start();
 ~~~
 
-The **secure** option assumes HTTPS. Configure it appropriately for the local environment and require HTTPS for a deployed application. **httponly** prevents ordinary client-side scripts from reading the session cookie. **samesite** helps limit cross-site cookie sending.
+Set **APP_HTTPS=1** only when the browser connects over HTTPS. For local HTTP, leave it unset. Behind a proxy, set it from trusted server configuration rather than a client header. **httponly** prevents ordinary client-side scripts from reading the session cookie. **samesite** helps limit cross-site cookie sending.
 
 After successful authentication, rotate the session identifier:
 
