@@ -4,7 +4,7 @@ These are my personal study notes from learning PHP and using it to build comman
 
 ## About these notes
 
-The chapters begin with the PHP runtime and command line, then move through types, functions, arrays, object-oriented code, Composer, HTTP, sessions, database access, files, testing, and production practices. Each chapter explains why a concept matters, includes focused PHP examples, and ends with review questions.
+The chapters begin with the PHP runtime and command line, then move through types, functions, arrays, object-oriented code, Composer, HTTP, sessions, database access, files, testing, and production practices. Each chapter explains why a concept matters, includes focused PHP examples, and ends with review questions. The final appendices collect the chapter code samples and provide answers to every review question.
 
 Examples use PHP and its standard library unless a chapter introduces a tool such as Composer, PHPUnit, or PDO. PHP versions, extensions, and server configuration can differ, so check the official documentation for the environment you use.
 
