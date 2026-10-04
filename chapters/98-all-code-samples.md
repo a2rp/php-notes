@@ -42,33 +42,33 @@ php greet.php Ashish
 
 ## 2. PHP CLI, built-in server, and configuration
 
-### Sample 5 (sh)
+### Sample 1 (sh)
 
 ~~~~sh
 php --version
 php --help
 ~~~~
 
-### Sample 6 (sh)
+### Sample 2 (sh)
 
 ~~~~sh
 php --ini
 php -m
 ~~~~
 
-### Sample 7 (sh)
+### Sample 3 (sh)
 
 ~~~~sh
 php --ri pdo_sqlite
 ~~~~
 
-### Sample 8 (sh)
+### Sample 4 (sh)
 
 ~~~~sh
 php -l app.php
 ~~~~
 
-### Sample 9 (sh)
+### Sample 5 (sh)
 
 ~~~~sh
 php -S 127.0.0.1:8000 -t public
@@ -76,7 +76,7 @@ php -S 127.0.0.1:8000 -t public
 
 ## 3. Values, variables, and type declarations
 
-### Sample 10 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -89,14 +89,14 @@ $score = null;
 var_dump($name, $years, $isLearning, $score);
 ~~~~
 
-### Sample 11 (php)
+### Sample 2 (php)
 
 ~~~~php
 $value = "42";
 echo get_debug_type($value);
 ~~~~
 
-### Sample 12 (php)
+### Sample 3 (php)
 
 ~~~~php
 $input = "0";
@@ -105,7 +105,7 @@ var_dump($input == 0);
 var_dump($input === 0);
 ~~~~
 
-### Sample 13 (php)
+### Sample 4 (php)
 
 ~~~~php
 <?php
@@ -120,7 +120,7 @@ function add(int $left, int $right): int
 echo add(2, 3);
 ~~~~
 
-### Sample 14 (php)
+### Sample 5 (php)
 
 ~~~~php
 function displayName(?string $name): string
@@ -134,7 +134,7 @@ function formatIdentifier(int|string $identifier): string
 }
 ~~~~
 
-### Sample 15 (php)
+### Sample 6 (php)
 
 ~~~~php
 $person = [
@@ -148,7 +148,7 @@ var_dump($person);
 
 ## 4. Operators, conditions, and loops
 
-### Sample 16 (php)
+### Sample 1 (php)
 
 ~~~~php
 $subtotal = 125.50;
@@ -160,7 +160,7 @@ echo $total;
 var_dump($isLargeOrder);
 ~~~~
 
-### Sample 17 (php)
+### Sample 2 (php)
 
 ~~~~php
 $age = 22;
@@ -173,7 +173,7 @@ if ($age >= 18 && $hasPermission) {
 }
 ~~~~
 
-### Sample 18 (php)
+### Sample 3 (php)
 
 ~~~~php
 $score = 84;
@@ -189,7 +189,7 @@ if ($score >= 90) {
 echo $grade;
 ~~~~
 
-### Sample 19 (php)
+### Sample 4 (php)
 
 ~~~~php
 $method = "POST";
@@ -206,7 +206,7 @@ switch ($method) {
 }
 ~~~~
 
-### Sample 20 (php)
+### Sample 5 (php)
 
 ~~~~php
 for ($number = 1; $number <= 3; $number++) {
@@ -214,7 +214,7 @@ for ($number = 1; $number <= 3; $number++) {
 }
 ~~~~
 
-### Sample 21 (php)
+### Sample 6 (php)
 
 ~~~~php
 $attempts = 0;
@@ -225,7 +225,7 @@ while ($attempts < 3) {
 }
 ~~~~
 
-### Sample 22 (php)
+### Sample 7 (php)
 
 ~~~~php
 for ($number = 1; $number <= 5; $number++) {
@@ -243,7 +243,7 @@ for ($number = 1; $number <= 5; $number++) {
 
 ## 5. Functions, scope, and closures
 
-### Sample 23 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -258,7 +258,7 @@ function totalWithTax(float $amount, float $rate): float
 echo totalWithTax(100.0, 0.08);
 ~~~~
 
-### Sample 24 (php)
+### Sample 2 (php)
 
 ~~~~php
 function greet(string $name = "friend"): string
@@ -270,7 +270,7 @@ echo greet();
 echo greet("Asha");
 ~~~~
 
-### Sample 25 (php)
+### Sample 3 (php)
 
 ~~~~php
 function displayLabel(?string $label): string
@@ -279,7 +279,7 @@ function displayLabel(?string $label): string
 }
 ~~~~
 
-### Sample 26 (php)
+### Sample 4 (php)
 
 ~~~~php
 function makeMessage(string $name): string
@@ -291,7 +291,7 @@ function makeMessage(string $name): string
 echo makeMessage("Ravi");
 ~~~~
 
-### Sample 27 (php)
+### Sample 5 (php)
 
 ~~~~php
 $taxRate = 0.08;
@@ -303,7 +303,7 @@ $addTax = function (float $amount) use ($taxRate): float {
 echo $addTax(100.0);
 ~~~~
 
-### Sample 28 (php)
+### Sample 6 (php)
 
 ~~~~php
 $factor = 3;
@@ -312,7 +312,7 @@ $multiply = fn (int $value): int => $value * $factor;
 echo $multiply(4);
 ~~~~
 
-### Sample 29 (php)
+### Sample 7 (php)
 
 ~~~~php
 function percentageOf(float $amount, float $percent): float
@@ -327,7 +327,7 @@ function percentageOf(float $amount, float $percent): float
 
 ## 6. Arrays, strings, and JSON
 
-### Sample 30 (php)
+### Sample 1 (php)
 
 ~~~~php
 $prices = [12.50, 8.00, 4.25];
@@ -339,7 +339,7 @@ foreach ($prices as $price) {
 echo array_sum($prices);
 ~~~~
 
-### Sample 31 (php)
+### Sample 2 (php)
 
 ~~~~php
 $employee = [
@@ -351,13 +351,13 @@ $employee = [
 echo $employee["name"];
 ~~~~
 
-### Sample 32 (php)
+### Sample 3 (php)
 
 ~~~~php
 $department = $employee["department"] ?? "Unassigned";
 ~~~~
 
-### Sample 33 (php)
+### Sample 4 (php)
 
 ~~~~php
 $numbers = [2, 5, 8, 11];
@@ -373,7 +373,7 @@ $largeValues = array_filter(
 );
 ~~~~
 
-### Sample 34 (php)
+### Sample 5 (php)
 
 ~~~~php
 $rawName = "  Asha Rao  ";
@@ -384,7 +384,7 @@ if (str_contains($name, " ")) {
 }
 ~~~~
 
-### Sample 35 (php)
+### Sample 6 (php)
 
 ~~~~php
 $payload = [
@@ -396,7 +396,7 @@ $json = json_encode($payload, JSON_THROW_ON_ERROR);
 echo $json;
 ~~~~
 
-### Sample 36 (php)
+### Sample 7 (php)
 
 ~~~~php
 $decoded = json_decode(
@@ -411,7 +411,7 @@ var_dump($decoded["active"], $decoded["visits"]);
 
 ## 7. Classes, objects, and properties
 
-### Sample 37 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -446,7 +446,7 @@ $price = new Money(1250);
 echo $price->format();
 ~~~~
 
-### Sample 38 (php)
+### Sample 2 (php)
 
 ~~~~php
 class Counter
@@ -465,7 +465,7 @@ class Counter
 }
 ~~~~
 
-### Sample 39 (php)
+### Sample 3 (php)
 
 ~~~~php
 final class Order
@@ -484,7 +484,7 @@ final class Order
 
 ## 8. Interfaces, traits, enums, and exceptions
 
-### Sample 40 (php)
+### Sample 1 (php)
 
 ~~~~php
 interface Notifier
@@ -501,7 +501,7 @@ final class EmailNotifier implements Notifier
 }
 ~~~~
 
-### Sample 41 (php)
+### Sample 2 (php)
 
 ~~~~php
 trait HasCreatedAt
@@ -530,7 +530,7 @@ final class Article
 }
 ~~~~
 
-### Sample 42 (php)
+### Sample 3 (php)
 
 ~~~~php
 enum OrderStatus: string
@@ -544,7 +544,7 @@ $status = OrderStatus::Paid;
 echo $status->value;
 ~~~~
 
-### Sample 43 (php)
+### Sample 4 (php)
 
 ~~~~php
 function requirePositive(int $value): int
@@ -563,7 +563,7 @@ try {
 }
 ~~~~
 
-### Sample 44 (php)
+### Sample 5 (php)
 
 ~~~~php
 final class MissingOrder extends RuntimeException
@@ -573,7 +573,7 @@ final class MissingOrder extends RuntimeException
 
 ## 9. Namespaces, Composer, and autoloading
 
-### Sample 45 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -589,7 +589,7 @@ final class Greeting
 }
 ~~~~
 
-### Sample 46 (php)
+### Sample 2 (php)
 
 ~~~~php
 <?php
@@ -607,13 +607,13 @@ final class HomeController
 }
 ~~~~
 
-### Sample 47 (sh)
+### Sample 3 (sh)
 
 ~~~~sh
 composer init
 ~~~~
 
-### Sample 48 (json)
+### Sample 4 (json)
 
 ~~~~json
 {
@@ -627,13 +627,13 @@ composer init
 }
 ~~~~
 
-### Sample 49 (sh)
+### Sample 5 (sh)
 
 ~~~~sh
 composer dump-autoload
 ~~~~
 
-### Sample 50 (php)
+### Sample 6 (php)
 
 ~~~~php
 <?php
@@ -646,7 +646,7 @@ echo $greeting->message("Ashish");
 
 ## 10. HTTP requests, responses, and forms
 
-### Sample 51 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -675,7 +675,7 @@ $name = is_string($nameValue) ? trim($nameValue) : "";
 echo "Hello, " . $name;
 ~~~~
 
-### Sample 52 (html)
+### Sample 2 (html)
 
 ~~~~html
 <form method="post" action="/contact.php">
@@ -688,7 +688,7 @@ echo "Hello, " . $name;
 </form>
 ~~~~
 
-### Sample 53 (php)
+### Sample 3 (php)
 
 ~~~~php
 <?php
@@ -697,7 +697,7 @@ header("Content-Type: text/html; charset=utf-8");
 http_response_code(200);
 ~~~~
 
-### Sample 54 (php)
+### Sample 4 (php)
 
 ~~~~php
 <?php
@@ -712,7 +712,7 @@ echo "</p>";
 
 ## 11. Validation, sessions, cookies, and CSRF
 
-### Sample 55 (php)
+### Sample 1 (php)
 
 ~~~~php
 $emailValue = $_POST["email"] ?? "";
@@ -725,7 +725,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
 }
 ~~~~
 
-### Sample 56 (php)
+### Sample 2 (php)
 
 ~~~~php
 <?php
@@ -739,14 +739,14 @@ session_set_cookie_params([
 session_start();
 ~~~~
 
-### Sample 57 (php)
+### Sample 3 (php)
 
 ~~~~php
 session_regenerate_id(true);
 $_SESSION["user_id"] = $userId;
 ~~~~
 
-### Sample 58 (php)
+### Sample 4 (php)
 
 ~~~~php
 if (!isset($_SESSION["csrf_token"])) {
@@ -756,7 +756,7 @@ if (!isset($_SESSION["csrf_token"])) {
 $csrfToken = $_SESSION["csrf_token"];
 ~~~~
 
-### Sample 59 (php)
+### Sample 5 (php)
 
 ~~~~php
 <input
@@ -766,7 +766,7 @@ $csrfToken = $_SESSION["csrf_token"];
 >
 ~~~~
 
-### Sample 60 (php)
+### Sample 6 (php)
 
 ~~~~php
 $submittedToken = $_POST["csrf_token"] ?? "";
@@ -782,7 +782,7 @@ if (
 
 ## 12. PDO, prepared statements, and transactions
 
-### Sample 61 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -800,7 +800,7 @@ $pdo->exec(
 );
 ~~~~
 
-### Sample 62 (php)
+### Sample 2 (php)
 
 ~~~~php
 $statement = $pdo->prepare(
@@ -813,7 +813,7 @@ $statement->execute([
 ]);
 ~~~~
 
-### Sample 63 (php)
+### Sample 3 (php)
 
 ~~~~php
 $statement = $pdo->prepare(
@@ -830,7 +830,7 @@ if ($contact === false) {
 }
 ~~~~
 
-### Sample 64 (php)
+### Sample 4 (php)
 
 ~~~~php
 try {
@@ -856,7 +856,7 @@ try {
 
 ## 13. Files, uploads, and streams
 
-### Sample 65 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -871,7 +871,7 @@ $message = file_get_contents($path);
 echo $message;
 ~~~~
 
-### Sample 66 (php)
+### Sample 2 (php)
 
 ~~~~php
 <?php
@@ -902,7 +902,7 @@ if (!isset($allowedTypes[$mimeType])) {
 }
 ~~~~
 
-### Sample 67 (php)
+### Sample 3 (php)
 
 ~~~~php
 $storageDirectory = dirname(__DIR__) . "/private-uploads";
@@ -923,7 +923,7 @@ if (!move_uploaded_file($file["tmp_name"], $destination)) {
 }
 ~~~~
 
-### Sample 68 (php)
+### Sample 4 (php)
 
 ~~~~php
 $handle = fopen($path, "rb");
@@ -949,13 +949,13 @@ try {
 
 ## 14. Testing with PHPUnit
 
-### Sample 69 (sh)
+### Sample 1 (sh)
 
 ~~~~sh
 composer require --dev phpunit/phpunit
 ~~~~
 
-### Sample 70 (php)
+### Sample 2 (php)
 
 ~~~~php
 <?php
@@ -979,7 +979,7 @@ final class PriceCalculator
 }
 ~~~~
 
-### Sample 71 (php)
+### Sample 3 (php)
 
 ~~~~php
 <?php
@@ -1010,7 +1010,7 @@ final class PriceCalculatorTest extends TestCase
 }
 ~~~~
 
-### Sample 72 (sh)
+### Sample 4 (sh)
 
 ~~~~sh
 vendor/bin/phpunit tests
@@ -1018,7 +1018,7 @@ vendor/bin/phpunit tests
 
 ## 15. Security, errors, and production practices
 
-### Sample 73 (php)
+### Sample 1 (php)
 
 ~~~~php
 $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -1030,7 +1030,7 @@ if (password_verify($submittedPassword, $hash)) {
 
 ## 16. Build a small PHP JSON service
 
-### Sample 74 (php)
+### Sample 1 (php)
 
 ~~~~php
 <?php
@@ -1165,7 +1165,7 @@ try {
 }
 ~~~~
 
-### Sample 75 (php)
+### Sample 2 (php)
 
 ~~~~php
 <?php
@@ -1173,25 +1173,25 @@ try {
 require __DIR__ . "/index.php";
 ~~~~
 
-### Sample 76 (sh)
+### Sample 3 (sh)
 
 ~~~~sh
 php -S 127.0.0.1:8000 -t public public/router.php
 ~~~~
 
-### Sample 77 (sh)
+### Sample 4 (sh)
 
 ~~~~sh
 curl -i http://127.0.0.1:8000/health
 ~~~~
 
-### Sample 78 (sh)
+### Sample 5 (sh)
 
 ~~~~sh
 curl -i -X POST http://127.0.0.1:8000/contacts -H "Content-Type: application/json" --data "{\"name\":\"Asha Rao\",\"email\":\"asha@example.test\"}"
 ~~~~
 
-### Sample 79 (sh)
+### Sample 6 (sh)
 
 ~~~~sh
 curl -i http://127.0.0.1:8000/contacts
