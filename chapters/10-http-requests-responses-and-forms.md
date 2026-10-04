@@ -12,6 +12,8 @@ PHP exposes the HTTP method through **$_SERVER["REQUEST_METHOD"]**. Query-string
 ~~~php
 <?php
 
+header("Content-Type: text/plain; charset=utf-8");
+
 $method = $_SERVER["REQUEST_METHOD"] ?? "GET";
 
 if ($method === "POST") {
